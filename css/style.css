@@ -1,89 +1,61 @@
-.service {
-  background: #fce8bd;
-  margin-top: 90px;
-  padding: 30px 0;
+.meeting {
+  padding-top: 150px;
+  padding-bottom: 100px;
 }
 
-.service-title {
-  color: #000;
-  font-size: 30px;
-  font-weight: 510;
-  opacity: 0.8;
-  text-align: center;
-  margin-bottom: 20px;
+.meeting-name {
+  color: #222936;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38px;
 }
 
-.service-box {
+.meeting-box {
   display: flex;
-  flex-wrap: wrap;
-  margin-left: -25px;
-}
-
-.service-content {
-  display: inline-flex;
   align-items: center;
-  background: #2c3442;
-  border: 1px solid #000;
-  border-radius: 15px;
-  cursor: pointer;
-  width: calc(50% - 25px);
-  margin-left: 25px;
-  margin-bottom: 25px;
-  transition: 0.6s;
-}
-.service-content:hover {
-  box-shadow: 0px 13px 79px 2px rgba(0, 0, 0, 0.32);
-  -webkit-box-shadow: 0px 13px 79px 2px rgba(0, 0, 0, 0.32);
-  -moz-box-shadow: 0px 13px 79px 2px rgba(0, 0, 0, 0.32);
-  transition: 0.6s;
+  justify-content: space-between;
+  margin-top: 60px;
 }
 
-.service-text {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 400;
-  padding-left: 25px;
+.meeting-text {
+  color: #464646;
+  font-family: "Mulish";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 424px;
 }
 
-@media screen and (max-width: 1041px) {
-  .service-content {
-    max-width: 500px;
-  }
-  .service-img {
-    width: 250px;
-  }
+.meeting-img {
+  border-radius: 10px;
+  width: 550px;
+  margin-left: 10px;
 }
-@media screen and (max-width: 958px) {
-  .service-box {
+
+@media screen and (max-width: 840px) {
+  .meeting-box {
     display: flex;
+    flex-direction: column-reverse;
     width: 100%;
+    align-items: flex-start;
+    margin-top: 50px;
   }
-  .service-content {
-    max-width: 100%;
+  .meeting-img {
     width: 100%;
+    margin-left: 0;
   }
-  .service-text {
-    font-size: 18px;
-  }
-  .service-img {
-    margin-left: auto;
-  }
-}
-@media screen and (max-width: 514px) {
-  .service-text {
+  .meeting-text {
     font-size: 16px;
-  }
-  .service-img {
-    width: 200px;
-    height: 150px;
+    max-width: 100%;
+    margin-top: 20px;
   }
 }
-@media screen and (max-width: 389px) {
-  .service-img {
-    width: 140px;
-    height: 150px;
+@media screen and (max-width: 460px) {
+  .meeting-box {
+    margin-top: 30px;
   }
-  .service-text {
-    font-size: 13px;
+  .meeting-name {
+    font-size: 25px;
+    line-height: 30px;
   }
 }/*# sourceMappingURL=style.css.map */

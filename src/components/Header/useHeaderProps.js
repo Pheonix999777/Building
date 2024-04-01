@@ -1,3 +1,4 @@
+import i18next from "i18next";
 import { useEffect, useState } from "react";
 
 export const useHeaderProps = () => {
@@ -19,7 +20,7 @@ export const useHeaderProps = () => {
     },
   ];
 
-  const [selectedLanguage, setSelectedLanguage] = useState(dropdownValues[0]);
+  const [selectedLanguage] = useState(dropdownValues[0]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,20 +37,17 @@ export const useHeaderProps = () => {
     setShowNavbar(!showNavbar);
   };
 
-  const handleChangeLanguage = (language) => {
-    setSelectedLanguage(language);
+  const handleChangeLanguage = (languageCode) => {
+    i18next.changeLanguage(languageCode);
+    setShowNavbar(false);
   };
 
-  const changeDropdownValue = (newValue) => {
-    setSelectedLanguage(newValue);
-  };
   return {
     dropdownValues,
     isSticky,
     selectedLanguage,
     handleShowNavbar,
     handleChangeLanguage,
-    changeDropdownValue,
     showNavbar,
   };
 };

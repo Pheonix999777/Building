@@ -114,6 +114,19 @@
   display: none;
 }
 
+.header-btns {
+  display: none;
+}
+
+.header-btn {
+  border: none;
+  color: $black-color;
+  background: transparent;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
 @media screen and (max-width: 895px) {
   .header-link {
     font-size: 12px;
@@ -146,7 +159,15 @@
     display: none;
   }
 
+  .header-list:nth-child(7) {
+    display: none;
+  }
+
   .header-list:not(:last-child) {
+    margin-left: 0;
+  }
+
+  .header-list {
     margin-left: 0;
   }
 
@@ -202,5 +223,11 @@
 
   .header-icon-hidden {
     display: block;
+  }
+
+  .header-btns {
+    display: block;
+    margin-left: 60px;
+    margin-top: 20px;
   }
 }

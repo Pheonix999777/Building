@@ -8,8 +8,8 @@ import { FaPhone } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import { useHeaderProps } from "./useHeaderProps";
 import { useTranslation } from "react-i18next";
-import "./style.scss";
 import { MainContext } from "../../modules/MainContext/MainContext";
+import "./style.scss";
 
 export const Header = () => {
   const { change } = useContext(MainContext);
@@ -122,6 +122,26 @@ export const Header = () => {
               />
             </li>
           </ul>
+          <div className="header-btns">
+            <button
+              className="header-btn"
+              onClick={() => handleChangeLanguage("UZ")}
+            >
+              UZ
+            </button>
+            <button
+              className="header-btn"
+              onClick={() => handleChangeLanguage("RU")}
+            >
+              RU
+            </button>
+            <button
+              className="header-btn"
+              onClick={() => handleChangeLanguage("EN")}
+            >
+              EN
+            </button>
+          </div>
         </nav>
       </Container>
     </header>
