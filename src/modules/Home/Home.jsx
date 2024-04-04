@@ -10,7 +10,7 @@ export const Home = () => {
   return (
     <section className="hero">
       <a className="anchor" id="home"></a>
-  
+
       <div className="hero-box">
         <img className="hero-img" src={pht} alt="" />
       </div>

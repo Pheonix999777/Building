@@ -15,7 +15,7 @@ export const About = () => {
         <a className="anchor" id="about"></a>
 
         <h2 className="about-title"> {t("Allnews")}</h2>
-        <ul className="about-ul">
+        <ul className="about-ul ">
           <li className="about-list">
             <img className="about-img" src={aboutImg} alt="" width={240} />
             <div className="about-wrapper">
@@ -28,7 +28,7 @@ export const About = () => {
           <li className="about-list">
             <img className="about-img" src={aboutImg2} alt="" width={240} />
             <div className="about-wrapper">
-              <button className="about-btn">{t("BtnText2")}</button>
+              <button className="about-btn">{t("BtnText")}</button>
               <h2 className="about-wrapper-title">{t("NewsTitle2")}</h2>
               <p className="about-text">{t("NewsText2")}</p>
             </div>

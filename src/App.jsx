@@ -1,5 +1,3 @@
-import { Home } from "./modules/Home/Home";
-import { Projects } from "./modules/Projects/Projects";
 import "../src/modules/Translations/Translations";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { MainLayout } from "./components/Layout/MainLayout/MainLayout";
@@ -14,6 +12,7 @@ function App() {
   const toggleTheme = () => {
     setChange((prevMode) => !prevMode);
   };
+
   return (
     <MainContextProvider value={{ change, toggleTheme }}>
       <BrowserRouter>

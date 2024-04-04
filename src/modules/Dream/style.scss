@@ -3,9 +3,19 @@
 }
 
 .dream-img {
-  width: 350px;
-  height: 350px;
+  max-width: 100%;
+  width: 320px;
+  height: 320px;
   object-fit: cover;
+}
+
+.dream-card {
+  width: 340px;
+  height: 340px;
+}
+
+.dream .container {
+  overflow: hidden;
 }
 
 .dream-title {

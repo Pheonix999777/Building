@@ -30,7 +30,7 @@ export const CustomDropdown = ({
         {" "}
         {value?.label ||
           innerValue?.label ||
-          (firstDefault && options[0]?.label) ||
+          ( options[0]?.label) ||
           placeholder}
       </button>
       <ul className="dropdown-content">

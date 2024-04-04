@@ -20,8 +20,6 @@ export const useHeaderProps = () => {
     },
   ];
 
-  const [selectedLanguage] = useState(dropdownValues[0]);
-
   useEffect(() => {
     const handleScroll = () => {
       setSticky(window.scrollY > 100);
@@ -45,7 +43,7 @@ export const useHeaderProps = () => {
   return {
     dropdownValues,
     isSticky,
-    selectedLanguage,
+
     handleShowNavbar,
     handleChangeLanguage,
     showNavbar,
