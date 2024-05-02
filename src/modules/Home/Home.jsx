@@ -1,8 +1,7 @@
 import { useTranslation } from "react-i18next";
-import pht from "../../../src/assets/city1.51e44d49b1c61434ca07.jpeg";
+import pht from "../../../src/assets/city1.51e44d49b1c61434ca07 (1).jpeg";
 import { Container } from "../../components/Container/Container";
 import "./style.scss";
-import { Link } from "react-router-dom";
 
 export const Home = () => {
   const { t } = useTranslation();

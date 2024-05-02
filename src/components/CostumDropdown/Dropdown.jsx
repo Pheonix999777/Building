@@ -11,7 +11,6 @@ export const CustomDropdown = ({
   value,
   setValue = () => {},
   onChange = () => {},
-
 }) => {
   const { handleClose, innerValue, handleChange } = useCustomDropdown(
     options,
@@ -28,10 +27,7 @@ export const CustomDropdown = ({
     <div className="dropdown">
       <button className={className ? "dropbtn-dark" : "dropbtn"}>
         {" "}
-        {value?.label ||
-          innerValue?.label ||
-          ( options[0]?.label) ||
-          placeholder}
+        {value?.label || innerValue?.label || options[0]?.label || firstDefault}
       </button>
       <ul className="dropdown-content">
         {options.map((option, index) => (

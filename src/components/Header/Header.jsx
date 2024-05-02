@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { Container } from "../Container/Container";
 import { CustomDropdown } from "../CostumDropdown/Dropdown";
-import logo from "../../assets/ataev2.563d9f6552a0ae9e7a2b.png";
-import logo2 from "../../assets/ataev1.a8abd3c374603900fb01.png";
+import logo from "../../assets/ataev2.563d9f6552a0ae9e7a2b logo.png";
+import logo2 from "../../assets/ataev1.a8abd3c374603900fb0 logo.png";
 import { FiMenu } from "react-icons/fi";
 import { FaPhone } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
@@ -117,6 +117,7 @@ export const Header = () => {
                 className={isSticky ? "header-link-sticky" : ""}
                 options={dropdownValues}
                 value={selectedLanguage}
+                firstDefault={dropdownValues}
                 onChange={handleChangeLanguage}
                 changeDropdownValue={changeDropdownValue}
               />

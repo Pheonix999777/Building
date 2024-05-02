@@ -43,7 +43,6 @@ export const useHeaderProps = () => {
   return {
     dropdownValues,
     isSticky,
-
     handleShowNavbar,
     handleChangeLanguage,
     showNavbar,

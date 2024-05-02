@@ -1,5 +1,5 @@
 import { Container } from "../Container/Container";
-import pht from "../../assets/ataev2.563d9f6552a0ae9e7a2b.png";
+import pht from "../../assets/ataev2.563d9f6552a0ae9e7a2b logo.png";
 import { FaInstagram } from "react-icons/fa6";
 import { SiFacebook } from "react-icons/si";
 import "./style.scss";
