@@ -12,14 +12,10 @@ export const CustomDropdown = ({
   onChange = () => {},
 }) => {
   const { handleClose, innerValue, handleChange } = useCustomDropdown(
-    options,
     value,
     setValue,
     onChange
   );
-  const handleLanguageChange = (selectedLanguage) => {
-    i18next.changeLanguage(selectedLanguage);
-  };
 
   return (
     <div className="dropdown">
@@ -36,8 +32,7 @@ export const CustomDropdown = ({
               handleChange(option);
               setValue(option);
               handleClose();
-              handleLanguageChange(option.value);
-              onChange(option);
+              onChange(option.value);
             }}
           >
             <button className="optionBtn">{option.label}</button>
