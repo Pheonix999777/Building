@@ -5,21 +5,6 @@ export const useHeaderProps = () => {
   const [showNavbar, setShowNavbar] = useState(false);
   const [isSticky, setSticky] = useState(false);
 
-  const dropdownValues = [
-    {
-      label: "UZ",
-      value: "UZ",
-    },
-    {
-      label: "RU",
-      value: "RU",
-    },
-    {
-      label: "EN",
-      value: "EN",
-    },
-  ];
-
   useEffect(() => {
     const handleScroll = () => {
       setSticky(window.scrollY > 100);
@@ -37,11 +22,11 @@ export const useHeaderProps = () => {
 
   const handleChangeLanguage = (languageCode) => {
     i18next.changeLanguage(languageCode);
+
     setShowNavbar(false);
   };
 
   return {
-    dropdownValues,
     isSticky,
     handleShowNavbar,
     handleChangeLanguage,

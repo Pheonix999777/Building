@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export const useCustomDropdown = () => {
   const [isOpen, setOpen] = useState(false);
-  const [innerValue, setInnerValue] = useState(null);
+  const [innerValue, setInnerValue] = useState([]);
   const handleClose = () => setOpen(false);
 
   const handleToggle = () => setOpen((prev) => !prev);

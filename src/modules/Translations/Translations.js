@@ -6,9 +6,9 @@ i18next
   .use(initReactI18next)
   .use(i18nextBrowserLanguagedetector)
   .init({
-    fallbackLng: "uz",
+    fallbackLng: "Uz",
     resources: {
-      UZ: {
+      Uz: {
         translation: {
           home: "Ma'lumotlar",
           about: "Biz xaqimizda",
@@ -72,7 +72,7 @@ i18next
           AboutName: "ATAEV BAHODIR BUILD haqida",
         },
       },
-      RU: {
+      Ru: {
         translation: {
           home: "Информация",
           about: "Насчет нас",
@@ -136,7 +136,7 @@ i18next
           AboutName: "Об АТАЕВЕ БАХОДИРЕ",
         },
       },
-      EN: {
+      En: {
         translation: {
           home: "Information",
           about: "About Us",

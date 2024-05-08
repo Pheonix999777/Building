@@ -14,7 +14,6 @@ import "./style.scss";
 export const Header = () => {
   const { change } = useContext(MainContext);
   const {
-    dropdownValues,
     isSticky,
     selectedLanguage,
     handleShowNavbar,
@@ -24,6 +23,21 @@ export const Header = () => {
   } = useHeaderProps();
 
   const { t } = useTranslation();
+
+  const dropdownValues = [
+    {
+      label: "UZ",
+      value: "Uz",
+    },
+    {
+      label: "RU",
+      value: "Ru",
+    },
+    {
+      label: "EN",
+      value: "En",
+    },
+  ];
 
   return (
     <header
@@ -116,8 +130,6 @@ export const Header = () => {
               <CustomDropdown
                 className={isSticky ? "header-link-sticky" : ""}
                 options={dropdownValues}
-                value={selectedLanguage}
-                firstDefault={dropdownValues}
                 onChange={handleChangeLanguage}
                 changeDropdownValue={changeDropdownValue}
               />
