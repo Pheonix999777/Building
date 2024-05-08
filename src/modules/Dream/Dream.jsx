@@ -3,8 +3,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Container } from "../../components/Container/Container";
-import sliderImg from "../../../src/assets/house1.6506c5f9ebc7179c4e1b.jpg";
-import sliderImg2 from "../../../src/assets/house2.496bd7ea5a38fd64835b.jpg";
+import sliderImg from "../../../src/assets/house1.6506c5f9ebc7179c4e1b (1).jpg";
+import sliderImg2 from "../../../src/assets/house2.496bd7ea5a38fd64835b (1).jpg";
 import sliderImg3 from "../../../src/assets/house3.84b231f0b8621e4984d8.jpg";
 import sliderImg4 from "../../../src/assets/house4.5271b2a77e32b5cd8eb7.jpg";
 import sliderImg5 from "../../../src/assets/house5.de4d959177742b856d4d.jpg";
@@ -23,6 +23,7 @@ export const Dream = () => {
   const pause = () => {
     sliderRef.slickPause();
   };
+
   var settings = {
     focusOnSelect: true,
     infinite: true,

@@ -6,8 +6,7 @@ import i18next from "i18next";
 export const CustomDropdown = ({
   className,
   options = [],
-  firstDefault,
-  placeholder,
+  firstDefault = null,
   value,
   setValue = () => {},
   onChange = () => {},
@@ -18,7 +17,6 @@ export const CustomDropdown = ({
     setValue,
     onChange
   );
-
   const handleLanguageChange = (selectedLanguage) => {
     i18next.changeLanguage(selectedLanguage);
   };

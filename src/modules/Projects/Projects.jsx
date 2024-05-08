@@ -4,7 +4,7 @@ import projectImg2 from "../../../src/assets/project.90d0ad1f2b01cab38a88.webp";
 import projectImg3 from "../../../src/assets/prezident.39ffbd8cd3007f491559.webp";
 import projectImg4 from "../../../src/assets/school.40d7b4718a3ea2005b09.webp";
 import projectImg5 from "../../../src/assets/image.55d1ad86051dd5af382b.webp";
-import projectImg6 from "../../../src/assets/image1.59ddf8dcd5ee2719efdc.webp";
+import projectImg6 from "../../../src/assets/image1.59ddf8dcd5ee2719efdc (1).webp";
 import { useTranslation } from "react-i18next";
 import "./style.scss";
 
