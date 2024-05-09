@@ -28,7 +28,8 @@ export const Projects = () => {
           <li className="projects-list">
             <img className="projects-img" src={projectImg2} alt="" />
             <div className="projects-box">
-              <h3 className="projects-ul-title">Gardens Residence</h3>\<br />
+              <h3 className="projects-ul-title">Gardens Residence</h3>
+              <br />
               <p className="projects-text">{t("ProjectsText2")}</p>
             </div>
           </li>

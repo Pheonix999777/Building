@@ -138,19 +138,19 @@ export const Header = () => {
           <div className="header-btns">
             <button
               className="header-btn"
-              onClick={() => handleChangeLanguage("UZ")}
+              onClick={() => handleChangeLanguage("Uz")}
             >
               UZ
             </button>
             <button
               className="header-btn"
-              onClick={() => handleChangeLanguage("RU")}
+              onClick={() => handleChangeLanguage("Ru")}
             >
               RU
             </button>
             <button
               className="header-btn"
-              onClick={() => handleChangeLanguage("EN")}
+              onClick={() => handleChangeLanguage("En")}
             >
               EN
             </button>
